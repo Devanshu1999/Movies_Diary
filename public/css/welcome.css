@@ -1,0 +1,32 @@
+.resultImgs {
+    vertical-align: middle;
+    width: "60";
+    height: "60";
+}
+
+#results-table {
+    border: 1px dotted #ccc;
+    padding: 3px;
+    background: #1b1b1b;
+}
+
+#results-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#results-table ul li {
+    padding: 5px 0;
+    color: rgb(231, 231, 233);
+}
+
+#results-table ul li:hover {
+    background: rgb(90, 89, 89);
+}
+
+#results-table ul li p {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}

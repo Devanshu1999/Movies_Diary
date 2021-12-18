@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="/register" method='post'>
+        <input name='username' type='text'/>
+        <br><br>
+        <input name='password' type='password'/>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		.register{
+			margin-top: 1%;
+			text-align: center;
+			font-style: italic;
+			font-size: 3.45rem;
+  			font-weight: 700;
+  			color: #33334e;
+  			font-family: Segoe UI;
+		}
+		
+		body {
+			background-image: url("${pageContext.request.contextPath}/resources/HomePage.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+		
+		.registerbox{
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			padding-top: 10%;
+		}
+		
+		.content{
+			border-style: hidden;
+			background-color: #4f5c6b;
+			border-radius: 32px;
+			padding: 35px;
+		}
+		
+		#inputbox{
+			height:28px;
+    		font-size:20px;
+    		background-color: #D3D3D3;
+		}
+		
+		#inputbox:focus {
+			border: 3px solid #555;
+		}
+		
+		.error{
+			color:red;
+		}
+	</style>
+
+
+</head>
+<body style="background-color: rgb(193, 201, 202);">
+<div class = "register">REGISTER</div>
+<div class = "registerbox">
+	<div class = "content">
+		<form action = "/register" method = "POST">
+			<table>
+					<tbody>
+						<tr>
+							<% if(error !== undefined) { %>
+								<span style="font-style: italic; color: crimson; font-size: 20px;"><%=error%></span> <br>
+								<% } %>
+							<td>
+								<font size="5" color="white">Username:</font>
+							</td>
+							<td><input name="username" type="text" class="inputbox" required/> <br>
+							</td>
+                            <td></td>
+						</tr>
+						
+						<tr>
+							<td><font size="5" color="white">Password:</font></td>
+							<td><input name="password" type="password" class="inputbox" required/></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type = "submit" value = "Register" class="btn btn-primary"/>
+							<a href = "/" class="btn btn-primary" role = "button">Cancel</a></td>
+							<td></td>
+						</tr>
+					</tbody>
+			</table>
+		</form:form>
+	</div>
+</div>
+	
+<script>
+
+</script>
+
+</body>
+</html>
