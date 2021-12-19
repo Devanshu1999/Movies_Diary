@@ -79,7 +79,7 @@ Node and MongoDB are required for this project. Refer [Node.js](https://nodejs.o
    MONGODB_URL=mongodb://127.0.0.1:27017/movies-tracker(EXAMPLE)
    JWT_SECRET=SecretForMoviesTrackerApp.(UseAnyString)
    ```
-
+4. To run - ```npm start``` or install [nodemon](https://nodemon.io/) and use ```npm run dev```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
