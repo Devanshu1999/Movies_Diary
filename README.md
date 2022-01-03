@@ -39,6 +39,8 @@
 Movie Diary is a convenient way to keep track of your movies watchlist. Keep track of which movies you want to see later. Create custom profiles based on genre, name of friend who recommended you etc. and add movies for easier access.
 Get the details of the movies e.g. Overview, rating, release date, runtime.
 
+## [TRY THE APP HERE](https://dverm-movies-diary.herokuapp.com/)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
